@@ -7,11 +7,14 @@ body {
     --white: #fff;
     --darkgrey: #212121;
     --sonicsilver: #757575;
+    --black: #000;
+    --blackrock: #2F303A;
+    --whitesmoke: #F5F4F4;
 }
 
 /* navbar */
 .logo {
-    color: #000;
+    color: var(--black);
     text-decoration-line: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -31,7 +34,6 @@ body {
 .linkbar-list {
     color: var(--darkgrey);
     text-decoration-line: none;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -51,7 +53,6 @@ body {
 .linkbar-contact-list {
     color: var(--sonicsilver);
     text-decoration-line: none;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -66,7 +67,7 @@ body {
 
 /* index main content section */
 .index-main-content-section {
-    background-color: #2F303A;
+    background-color: var(--blackrock);
 }
 
 .content-title {
@@ -81,7 +82,6 @@ body {
 
 /* index file button */
 .index-btn {
-    font-family: 'Roboto', sans-serif;
     background: var(--blue);
     color: var(--white);
     letter-spacing: 0.06em;
@@ -156,7 +156,6 @@ body {
 }
 
 .gallery-section-title {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -165,7 +164,6 @@ body {
 }
 
 .gallery-section-content {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
@@ -174,8 +172,7 @@ body {
 
 /* focus section button */
 .focus-btn-list {
-    font-family: 'Roboto', sans-serif;
-    background: #F5F4F4;
+    background: var(--whitesmoke);
     color: var(--darkgrey);
     border-radius: 4px;
     border: none;
@@ -185,22 +182,20 @@ body {
     letter-spacing: 0.03em;
 }
 
-.focus-btn-list:hover {
+.focus-btn-list:hover,
+.focus-btn-list:focus {
     color: var(--white);
 }
 
-/* .focus-btn-list:focus {
-    color: #008080;
-} */
-
-button:hover {
+button:hover,
+button:focus {
     background-color: var(--blue);
 }
 
 
 /* footer */
 footer {
-    background-color: #2F303A;
+    background-color: var(--blackrock);
 }
 
 .footer-logo {
@@ -209,7 +204,6 @@ footer {
 
 .footer-address-list {
     text-decoration-line: none;
-    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -218,7 +212,6 @@ footer {
 
 .footer-contact-list {
     text-decoration-line: none;
-    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
