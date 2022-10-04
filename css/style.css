@@ -16,6 +16,15 @@ body {
 }
 
 /* navbar */
+.header-container {
+    padding: 24px 215px 25px;
+    
+}
+
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .logo {
     color: var(--black);
     text-decoration-line: none;
@@ -78,6 +87,13 @@ body {
     background-color: var(--blackrock);
 }
 
+.hero-container {
+   margin: 0 auto;
+   padding: 200px 452px;
+    
+    
+}
+
 .content-title {
     color: var(--white);
     font-weight: 900;
@@ -86,6 +102,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 /* index file button */
@@ -101,6 +118,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    padding: 10px 32px;
 }
 
 .index-btn:hover,
@@ -111,6 +129,11 @@ body {
 
 
 /* section details */
+.details-container {
+  
+    padding: 94px 215px;
+}
+
 .details-section-title {
     font-weight: 700;
     font-size: 14px;
@@ -118,6 +141,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--darkgrey);
+    margin-bottom: 10px;
 }
 
 .details-section-content {
@@ -134,6 +158,10 @@ body {
 
 
 /* section about */
+.about-container {
+    padding: 94px 215px;
+}
+
 .about-section-title {
     font-weight: 700;
     font-size: 36px;
@@ -141,9 +169,14 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--darkgrey);
+    margin-bottom: 50px;
 }
 
 /* section our team  */
+.our-team-container {
+    padding: 94px 215px;
+}
+
 .our-team-section {
     background-color: var(--ghostwhite);
 }
@@ -155,6 +188,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--darkgrey);
+    margin-bottom: 50px;
 }
 
 .our-team-content {
@@ -167,6 +201,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--darkgrey);
+    margin-bottom: 10px;
 }
 
 .our-team-member-position {
@@ -228,6 +263,28 @@ footer {
     background-color: var(--blackrock);
 }
 
+.footer-container {
+    padding: 60px 215px;
+}
+
+.footer-logo-container {
+    margin-bottom: 20px;
+}
+
+.footer-logo-title-color {
+    color: var(--blue);
+}
+
+.footer-logo-link {
+    text-decoration-line: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    
+}
+
 .footer-logo {
     color: var(--white);
 }
@@ -238,6 +295,10 @@ footer {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white);
+}
+
+.footer-list-item {
+    margin-bottom: 9px;
 }
 
 .footer-contact-list {
