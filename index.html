@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,21 +17,24 @@
 </head>
 <body>
     <!-- header -->
-  <header class="header">
-    <div class="header-container">
+  <header class="page-header">
+    <div class="container main-nav">
     <nav class="navbar-title">
       <a href="./index.html" class="logo"><span class="navbar-title-color">Web</span>Studio</a>
+      
       <ul class="linkbar">
-        <li><a class="linkbar-list" href="./index.html">Студия</a></li>
-        <li><a class="linkbar-list" href="./portfolio.html">Портфолио</a></li>
-        <li><a class="linkbar-list" href="#">Контакты</a></li>
+        <li class="linkbar-item"><a class="linkbar-list" href="./index.html">Studio</a></li>
+        <li class="linkbar-item"><a class="linkbar-list" href="./portfolio.html">Portfolio</a></li>
+        <li class="linkbar-item"><a class="linkbar-list" href="#">Contacts</a></li>
       </ul>
-    </nav>
-
-    <ul class="linkbar">
-    <li><a class="linkbar-contact-list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    <li><a class="linkbar-contact-list" href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
+      </nav>
+    
+      <div class="linkbar-contacts-container">
+       <ul class="linkbar-contacts">
+        <li class="linkbar-item-contact"><a class="linkbar-contact-list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="linkbar-item-contact"><a class="linkbar-contact-list" href="tel:+12127724150">+1 212-772-4150</a></li>
+       </ul>
+     </div>
     </div>
   </header>
 
@@ -39,10 +42,11 @@
     <main class="index-main-container">
 
   <!-- section hero -->
-    <section class="index-main-content-section container">
+    <section class="index-main-content-section">
       <div class="hero-container">
-        <h1 class="content-title">эффективные решения для вашего бизнеса</h1>
-        <button class="index-btn container-index-btn" type="button">Заказать услуги</button>
+        <h1 class="content-title">effective solutions for your business</h1>
+
+            <button class="index-btn" type="button">Request our service</button> 
         </div>
     </section>
 
@@ -51,23 +55,23 @@
       <div class="details-container">
         <ul class="details-section-list">
             <li class="details-section-item">
-                <h3 class="details-section-title">увага до деталей</h3>
-                <p class="details-section-content">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                <h3 class="details-section-title">attention to details</h3>
+                <p class="details-section-content">We go into all the details and processes of your business to develop a customized solution.</p>
             </li>
 
             <li>
-                <h3 class="details-section-title">пунктуальность</h3>
-                <p class="details-section-content">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                <h3 class="details-section-title">punctuality</h3>
+                <p class="details-section-content">With us, you can feel safe and secure. An important principle of the company: respect your time and respect the agreed deadlines.</p>
             </li>
 
             <li>
-                <h3 class="details-section-title">планирование</h3>
-                <p class="details-section-content">Так само консультація з широким активом значною мірою зумовлює.</p>
+                <h3 class="details-section-title">planning</h3>
+                <p class="details-section-content">You will be able to observe and participate in every phase of solution development and implementation.</p>
             </li>
 
             <li>
-                <h3 class="details-section-title">вспомогательные технологии</h3>
-                <p class="details-section-content">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                <h3 class="details-section-title">modern technologies</h3>
+                <p class="details-section-content">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
             </li>
         </ul>
         </div>
@@ -76,43 +80,47 @@
     <!-- section about -->
     <section class="about-section container">
       <div class="about-container">
-        <h2 class="about-section-title">Чем мы занимаемся?</h2>
+        <h2 class="about-section-title">What we do</h2>
 
+        <div class="about-section-photo">
          <ul class="about-section-list">
-        <li><img src="./images/about_pic1.jpg" alt="зображення" width="370" height="294"></li>
-        <li><img src="./images/about_pic2.jpg" alt="зображення" width="370" height="294"></li>
-        <li><img src="./images/about_pic3.jpg" alt="зображення" width="370" height="294"></li>
-      </ul>
+          <li class="about-item"><img src="./images/about_pic1.jpg" alt="зображення" width="370" height="294"></li>
+          <li class="about-item"><img src="./images/about_pic2.jpg" alt="зображення" width="370" height="294"></li>
+          <li class="about-item"><img src="./images/about_pic3.jpg" alt="зображення" width="370" height="294"></li>
+         </ul>
+         </div>
       </div>
     </section>
 
     <!-- our team -->
     <section class="our-team-section container">
       <div class="our-team-container">
-        <h2 class="our-team-title">Наша команда</h2>
+        <h2 class="our-team-title">Our team</h2>
 
+        <div class="our-team-photo">
         <ul class="our-team-list">
         <li class="our-team-content">
-          <img src="./images/team_igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
-          <h3 class="our-team-member">Игорь Демьяненко</h3>
+          <img src="./images/team_igor.jpg" alt="Christopher Walker" width="270" height="260">
+          <h3 class="our-team-member">Christopher Walker</h3>
           <p class="our-team-member-position">Product Manager</p>
         </li>
         <li class="our-team-content">
-          <img src="./images/team_olga.jpg" alt="Ольга Репина" width="270" height="260">
-          <h3 class="our-team-member">Ольга Репина</h3>
+          <img src="./images/team_olga.jpg" alt="Kylie Evans" width="270" height="260">
+          <h3 class="our-team-member">Kylie Evans</h3>
           <p class="our-team-member-position">Frontend Developer</p>
           </li>
           <li class="our-team-content">
-          <img src="./images/team_nick.jpg" alt="Николай Тарасов" width="270" height="260">
-          <h3 class="our-team-member">Николай Тарасов</h3>
+          <img src="./images/team_nick.jpg" alt="Ryan Harris" width="270" height="260">
+          <h3 class="our-team-member">Ryan Harris</h3>
           <p class="our-team-member-position">Marketing</p>
           </li>
           <li class="our-team-content">
-          <img src="./images/team_michael.jpg" alt="Михаил Ермаков" width="270" height="260">
-          <h3 class="our-team-member">Михаил Ермаков</h3>
+          <img src="./images/team_michael.jpg" alt="Tyler Moore" width="270" height="260">
+          <h3 class="our-team-member">Tyler Moore</h3>
           <p class="our-team-member-position">UI Designer</p>
         </li>
       </ul>
+      </div>
       </div>
     </section>
 </main>
@@ -126,9 +134,9 @@
 
     <address class="footer-address">
         <ul class="footer-contact">
-            <li class="footer-list-item"><a class="footer-address-list" href="https://goo.gl/maps/dgsfpe7B3QZcpg6S7" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
+            <li class="footer-list-item"><a class="footer-address-list" href="https://goo.gl/maps/bMja515w1Hchg8Wk8" target="_blank">695 Park Ave, New York, NY 10065, </br>United States</a></li>
             <li class="footer-list-item"><a class="footer-contact-list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="footer-list-item"><a class="footer-contact-list" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="footer-list-item"><a class="footer-contact-list" href="tel:+12127724150">+1 212-772-4150</a></li>
         </ul>
     </address>
     </div>
