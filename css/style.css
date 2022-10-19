@@ -135,10 +135,12 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
+    margin: 0 auto;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    max-width: 696px;
 }
 
 /* index file button */
@@ -299,7 +301,6 @@ body {
 
 .gallery-section-item {
     flex-basis: calc((100% - 60px) / 3);
-    outline: 1px solid #EEEEEE;
 }
 
 .gallery-section-title {
@@ -308,8 +309,6 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--darkgrey);
-    padding-top: 20px;
-    padding-left: 24px;
 }
 
 .gallery-section-content {
@@ -317,8 +316,12 @@ body {
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--sonicsilver);
-    padding-bottom: 20px;
-    padding-left: 24px;
+}
+
+.gallery-bottom-frame {
+    border: 1px solid #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
 }
 
 /* focus section button */
@@ -340,6 +343,7 @@ body {
     line-height: 1.6;
     letter-spacing: 0.03em;
     cursor: pointer;
+    padding: 6px 26px;
 }
 
 .focus-btn-list:hover,
@@ -379,6 +383,10 @@ footer {
 
 .footer-logo {
     color: var(--white);
+}
+
+.footer-address {
+    margin-top: 20px;
 }
 
 .footer-address-list {
