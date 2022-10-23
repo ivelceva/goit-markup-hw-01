@@ -93,22 +93,23 @@ body {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: #757575;
     
 }
 
 .envelope-icon:hover {
-    stroke: ;
+    fill: var(--blue);
 }
 
 .phone-icon:hover {
-    stroke: var(--blue);
+    fill: var(--blue);
 }
 
 .phone-icon {
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    
+    fill: #757575;
 }
 
 .linkbar-contacts .linkbar-item-contact + .linkbar-item-contact {
@@ -141,7 +142,7 @@ body {
 }
 
 .linkbar-list:hover,
-.linkbar-contact-list:hover{
+.linkbar-contact-list:hover {
     color: var(--blue);
 }
 
@@ -391,6 +392,11 @@ body {
 .customers-icon {
     width: 106px;
     height: 60px;
+    fill: #AFB1B8;
+}
+
+.customers-icon:hover {
+    fill: var(--blue);
 }
 
 .customers-social-link {
