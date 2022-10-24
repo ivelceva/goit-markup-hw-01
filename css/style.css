@@ -89,6 +89,16 @@ body {
     margin-left: auto;
 }
 
+.envelope {
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
 .envelope-icon {
     width: 16px;
     height: 12px;
@@ -97,17 +107,17 @@ body {
     
 }
 
-.envelope-icon:hover {
+.linkbar-contacts:hover .envelope-icon {
     fill: var(--blue);
 }
 
-.phone-icon:hover {
+.linkbar-contacts:hover .phone-icon {
     fill: var(--blue);
 }
 
 .phone-icon {
-    width: 16px;
-    height: 12px;
+    width: 12px;
+    height: 16px;
     margin-right: 10px;
     fill: #757575;
 }
@@ -156,6 +166,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .content-title {
@@ -207,9 +219,9 @@ body {
     height: 70px;
 }
 
-.details-picture:hover .details-icon {
+/* .details-picture:hover .details-icon {
      stroke: #2196F3;
-}
+} */
 
 .details-section-item {
     flex-basis: calc((100% - 90px) / 4);
@@ -353,11 +365,13 @@ body {
     border-radius: 50%;
 }
 
-.our-team-social-link:hover {
+.our-team-social-link:hover,
+.our-team-social-link:focus {
     background-color: #2196F3;
 }
 
-.our-team-social-link:hover .our-team-social-icon {
+.our-team-social-link:hover .our-team-social-icon,
+.our-team-social-link:focus .our-team-social-icon {
     fill: #fff;
 }
 
@@ -414,12 +428,8 @@ body {
     border: 1px solid #2196F3;
 }
 
-/* .customers-social-link:hover .customers-icon {
-    fill: #000;
-} */
-
-.customers-list-item {
-  
+.customers-social-link:hover .customers-icon{
+    fill: var(--blue);
 }
 
 
@@ -513,7 +523,6 @@ footer {
 
 .footer-logo-address {
     display: flex;
-    gap: 30px;
 }
 
 .footer-logo-title-color {
@@ -534,6 +543,10 @@ footer {
     color: var(--white);
 }
 
+.footer-logo-address {
+    align-items: baseline;
+}
+
 .footer-address {
     margin-top: 20px;
 }
@@ -544,6 +557,10 @@ footer {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white);
+}
+
+.footer-logo-address-container {
+    margin-right: 70px;
 }
 
 .footer-list-item {
@@ -567,10 +584,10 @@ footer {
     font-size: 14px;
     font-weight: 700;
     color: var(--white);
+    margin-bottom: 20px;
 }
 
 .footer-social-container {
-    display: flex;
     justify-content: center;
 }
 
