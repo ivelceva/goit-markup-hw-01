@@ -107,11 +107,18 @@ body {
     
 }
 
-.linkbar-contacts:hover .envelope-icon {
+.linkbar-contact-list:hover,
+.linkbar-contact-list:focus {
+    color: var(--blue);
+}
+
+.linkbar-contact-list:hover .envelope-icon,
+.linkbar-contact-list:focus .envelope-icon {
     fill: var(--blue);
 }
 
-.linkbar-contacts:hover .phone-icon {
+.linkbar-contact-list:hover .phone-icon,
+.linkbar-contact-list:focus .phone-icon {
     fill: var(--blue);
 }
 
@@ -146,20 +153,14 @@ body {
     margin-right: 30px;
 }
 
-.linkbar-list:focus,
-.linkbar-contact-list:focus {
-     color: var(--blue);
-}
-
 .linkbar-list:hover,
-.linkbar-contact-list:hover {
+.linkbar-list:focus {
     color: var(--blue);
-}
+} 
 
 
 /* index main content section */
 .index-main-content-section {
-    /* background-color: var(--blackrock); */
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('./../images/cover_title_img.jpg');
