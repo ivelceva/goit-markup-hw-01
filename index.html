@@ -23,7 +23,7 @@
       <a href="./index.html" class="logo"><span class="navbar-title-color">Web</span>Studio</a>
       
       <ul class="linkbar">
-        <li class="linkbar-item"><a class="linkbar-list" href="./index.html">Studio</a></li>
+        <li class="linkbar-item"><a class="linkbar-list current" href="./index.html">Studio</a></li>
         <li class="linkbar-item"><a class="linkbar-list" href="./portfolio.html">Portfolio</a></li>
         <li class="linkbar-item"><a class="linkbar-list" href="#">Contacts</a></li>
       </ul>
@@ -57,7 +57,11 @@
               <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                   <p>Lorem ipsum dolor sit amet.</p>
-                  <button data-modal-close>Close</button>
+                  <button class="modal-close-button" type="btn" data-modal-close>
+                    <svg class="modal-close-icon">
+                      <use href="./images/icons/symbol-defs.svg#icon-closing-modal"></use>
+                    </svg>
+                  </button>
                 </div>
               </div> 
         </div>
