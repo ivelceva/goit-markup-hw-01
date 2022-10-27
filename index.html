@@ -53,7 +53,13 @@
       <div class="container hero-container">
         <h1 class="content-title">effective solutions for your business</h1>
 
-            <button class="index-btn" type="button">Request our service</button> 
+            <button class="index-btn" type="button" data-modal-open>Request our service</button>
+              <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <button data-modal-close>Close</button>
+                </div>
+              </div> 
         </div>
     </section>
 
@@ -114,9 +120,30 @@
         <h2 class="about-section-title">What we do</h2>
 
          <ul class="about-section-list">
-          <li class="about-item"><img src="./images/about_pic1.jpg" alt="зображення" width="370" height="294"></li>
-          <li class="about-item"><img src="./images/about_pic2.jpg" alt="зображення" width="370" height="294"></li>
-          <li class="about-item"><img src="./images/about_pic3.jpg" alt="зображення" width="370" height="294"></li>
+          <li class="about-item">
+            <img src="./images/about_pic1.jpg" alt="зображення" width="370" height="294">
+              <div class="about-item-name">
+                <p class="overlay-about">
+                  desktop apps
+                </p>
+            </div>
+          </li>
+          <li class="about-item">
+            <img src="./images/about_pic2.jpg" alt="зображення" width="370" height="294">
+              <div class="about-item-name">
+                  <p class="overlay-about">
+                    mobile apps
+                  </p>
+              </div>
+          </li>
+          <li class="about-item">
+            <img src="./images/about_pic3.jpg" alt="зображення" width="370" height="294">
+              <div class="about-item-name">
+                  <p class="overlay-about">
+                    design solutions
+                  </p>
+              </div>
+          </li>
          </ul>
       </div>
     </section>
@@ -380,5 +407,6 @@
      </div>
     </footer>
 
+  <script src="./js/modal.js"></script>
 </body>
 </html>

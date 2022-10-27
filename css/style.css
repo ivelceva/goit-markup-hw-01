@@ -76,6 +76,7 @@ body {
 }
 
 .linkbar-list {
+    position: relative;
     color: var(--darkgrey);
     text-decoration-line: none;
     font-weight: 500;
@@ -149,6 +150,30 @@ body {
     color: var(--blue);
 } 
 
+.linkbar-list::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--darkgrey);
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.linkbar-list:hover::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--blue);
+    border-radius: 2px;
+    opacity: 1;
+}
+
 
 /* index main content section */
 .index-main-content-section {
@@ -198,7 +223,24 @@ body {
     background-color: var(--hoverblue);
 }
 
+/* Modal Window */
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: 0;
+}
 
+.backdrop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+}
 
 /* section details */
 .details-section {
@@ -280,9 +322,29 @@ body {
 }
 
 .about-item {
+    position: relative;
     flex-basis: calc((100% - 60px) / 3);
 }
 
+.about-item-name {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding: 27px 132px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.overlay-about {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
 
 /* section our team  */
 .our-team-section {
@@ -435,10 +497,6 @@ body {
     padding-bottom: 94px;
 }
 
-/* .hidden-header {
-    visibility: hidden;
-} */
-
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -482,6 +540,36 @@ body {
     border: 1px solid #EEEEEE;
     border-top: none;
     padding: 20px 24px;
+}
+
+.gallery-section-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 91px;
+    padding-left: 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    overflow: auto;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}
+
+.gallery-section-link-wrapper:hover .overlay,
+.gallery-section-link-wrapper:focus .overlay {
+    transform: translateY(0%);
 }
 
 /* focus section button */
