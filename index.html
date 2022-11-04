@@ -55,8 +55,69 @@
 
             <button class="index-btn" type="button" data-modal-open>Request our service</button>
               <div class="backdrop is-hidden" data-modal>
+
+  <!-- MODAL FORM -->
+
                 <div class="modal">
-                 
+                  <p class="form-title">
+                    Leave your information and we'll call you back
+                  </p>
+                  
+                  <form class="modal-form" name="modals-form">
+                    <label for="name" class="modal-form-field">
+                      <span class="title-modal-form">Name</span>
+                    <span class="name-icon-modal-form">
+                      <input class="textfield" type="text" name="name" id="name" required />
+                      <svg class="icon-modal-form">
+                        <use href="./images/icons/symbol-defs.svg#icon-person-black-modal"></use>
+                      </svg>
+                    </span>
+                    </label>
+
+                    <label for="phone">
+                      <span class="title-modal-form">Telephone</span>
+                    <span class="name-icon-modal-form">
+                      <input class="textfield" type="text" name="phone" id="phone" required />
+                      <svg class="icon-modal-form">
+                        <use href="./images/icons/symbol-defs.svg#icon-phone-black-modal"></use>
+                      </svg>
+                    </span>
+                    </label>
+
+                    <label for="email">
+                      <span class="title-modal-form">E-mail</span>
+                    <span class="name-icon-modal-form">
+                      <input class="textfield" type="email" name="email" id="email" required />
+                      <svg class="icon-modal-form">
+                        <use href="./images/icons/symbol-defs.svg#icon-email-black-modal"></use>
+                      </svg>
+                    </span>
+                    </label>
+
+                    <label class="comments-form" for="comments">
+                      <span class="title-modal-form">Comments</span>
+                    <textarea class="feedback-modal" placeholder="Enter the text"></textarea>
+                    </label>
+
+                    <label class="checkbox-section" for="checkbox-accept">
+                      <div class="checkbox-icon-container">
+                    <input class="checkbox-form visually-hidden" type="checkbox" id="checkbox-accept">
+
+                      <svg class="checkbox-section-icon">
+                        <use class="checkbox-icon-accept" href="./images/icons/symbol-defs.svg#icon-check"></use>
+                        <use class="checkbox-icon-ignored" href="./images/icons/symbol-defs.svg#icon-Vector"></use>
+                      </svg>
+                      </div>  
+
+                      <div class="terms-conditions-link">
+                      <span class="checkbox-form-text">I agree with the newsletter and accept the</span>
+                        <a class="checkbox-modal-link" href="#">Terms and Conditions</a>
+                      </div>
+                    </label>
+
+                    <button class="button-submit-modal" type="submit">Send</button>
+                  </form>
+                  
                   <button class="modal-close-button" type="button" data-modal-close>
                     <svg class="modal-close-icon">
                       <use href="./images/icons/symbol-defs.svg#icon-closing-modal"></use>
@@ -407,6 +468,19 @@
               </a>
             </li>
           </ul>
+      </div>
+
+      <div class="subscribe-container">
+        <label for="subscribers">
+          <span class="subscribe-title">Subscribe to the newsletter</span>
+            <input class="subscribe-footer" type="email" name="email" id="subscribers" placeholder="E-mail" />
+        </label>
+
+        <button class="footer-subscribe-button" type="submit">Subscribe
+          <svg class="subscribe-icon">
+            <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+          </svg>
+        </button>
       </div>
      </div>
     </footer>
