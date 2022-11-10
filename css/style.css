@@ -21,6 +21,10 @@ body {
     --whitesmoke: #F5F5F5;
 }
 
+img {
+    display: block;
+}
+
 /* navbar */
 .container {
     margin: 0 auto;
@@ -698,7 +702,7 @@ body {
     padding-bottom: 94px;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
@@ -706,6 +710,16 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+} */
+
+.visually-hidden {
+  position: absolute !important;
+  clip: (1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .gallery-section-photo {

@@ -1,0 +1,44 @@
+/* section about */
+.about-section {
+    padding-bottom: 94px;
+}
+
+.about-section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--darkgrey);
+    margin-bottom: 50px;
+}
+
+.about-section-list {
+    display: flex;  
+    gap: 30px;
+}
+
+.about-item {
+    position: relative;
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.about-item-name {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding: 27px 132px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.overlay-about {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}

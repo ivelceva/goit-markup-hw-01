@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.min.css">
 
 </head>
 <body>
@@ -20,23 +20,23 @@
   <header class="page-header">
     <div class="container main-nav">
     <nav class="navbar-title">
-      <a href="./index.html" class="logo"><span class="navbar-title-color">Web</span>Studio</a>
+      <a href="./index.html" class="navbar-title__logo"><span class="navbar-title__color">Web</span>Studio</a>
       
       <ul class="linkbar">
-        <li class="linkbar-item"><a class="linkbar-list current" href="./index.html">Studio</a></li>
-        <li class="linkbar-item"><a class="linkbar-list" href="./portfolio.html">Portfolio</a></li>
-        <li class="linkbar-item"><a class="linkbar-list" href="#">Contacts</a></li>
+        <li class="linkbar__item"><a class="linkbar__list current" href="./index.html">Studio</a></li>
+        <li class="linkbar__item"><a class="linkbar__list" href="./portfolio.html">Portfolio</a></li>
+        <li class="linkbar__item"><a class="linkbar__list" href="#">Contacts</a></li>
       </ul>
       </nav>
     
        <ul class="linkbar-contacts">
-        <li class="linkbar-item-contact"><a class="linkbar-contact-list" href="mailto:info@devstudio.com">
+        <li class="linkbar-contacts__item"><a class="linkbar-contacts__list" href="mailto:info@devstudio.com">
             <svg class="envelope-icon">
                   <use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
 
-        <li class="linkbar-item-contact"><a class="linkbar-contact-list" href="tel:+12127724150">
+        <li class="linkbar-contacts__item"><a class="linkbar-contacts__list" href="tel:+12127724150">
             <svg class="phone-icon">
                   <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
             </svg>+1 212-772-4150</a>
@@ -49,77 +49,77 @@
     <main class="index-main-container"> 
 
   <!-- section hero -->
-    <section class="index-main-content-section">
-      <div class="container hero-container">
-        <h1 class="content-title">effective solutions for your business</h1>
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="hero-section__content-title">effective solutions for your business</h1>
 
-            <button class="index-btn" type="button" data-modal-open>Request our service</button>
+            <button class="hero-section__request-btn" type="button" data-modal-open>Request our service</button>
               <div class="backdrop is-hidden" data-modal>
 
   <!-- MODAL FORM -->
 
                 <div class="modal">
-                  <p class="form-title">
+                  <p class="modal__title">
                     Leave your information and we'll call you back
                   </p>
                   
-                  <form class="modal-form" name="modals-form">
-                    <label for="name" class="modal-form-field">
-                      <span class="title-modal-form">Name</span>
-                    <span class="name-icon-modal-form">
-                      <input class="textfield" type="text" name="name" id="name" required />
-                      <svg class="icon-modal-form">
+                  <form class="modal__form" name="modals-form">
+                    <label for="name" class="modal__form-field">
+                      <span class="modal__title-form">Name</span>
+                    <span class="modal__icons">
+                      <input class="modal__textfield" type="text" name="name" id="name" required />
+                      <svg class="modal__form-icon">
                         <use href="./images/icons/symbol-defs.svg#icon-person-black-modal"></use>
                       </svg>
                     </span>
                     </label>
 
-                    <label for="phone">
-                      <span class="title-modal-form">Telephone</span>
-                    <span class="name-icon-modal-form">
-                      <input class="textfield" type="text" name="phone" id="phone" required />
-                      <svg class="icon-modal-form">
+                    <label for="phone" class="modal__form-field">
+                      <span class="modal__title-form">Telephone</span>
+                    <span class="modal__icons">
+                      <input class="modal__textfield" type="text" name="phone" id="phone" required />
+                      <svg class="modal__form-icon">
                         <use href="./images/icons/symbol-defs.svg#icon-phone-black-modal"></use>
                       </svg>
                     </span>
                     </label>
 
-                    <label for="email">
-                      <span class="title-modal-form">E-mail</span>
-                    <span class="name-icon-modal-form">
-                      <input class="textfield" type="email" name="email" id="email" required />
-                      <svg class="icon-modal-form">
+                    <label for="email" class="modal__form-field">
+                      <span class="modal__title-form">E-mail</span>
+                    <span class="modal__icons">
+                      <input class="modal__textfield" type="email" name="email" id="email" required />
+                      <svg class="modal__form-icon">
                         <use href="./images/icons/symbol-defs.svg#icon-email-black-modal"></use>
                       </svg>
                     </span>
                     </label>
 
-                    <label class="comments-form" for="comments">
-                      <span class="title-modal-form">Comments</span>
-                    <textarea class="feedback-modal" placeholder="Enter the text"></textarea>
+                    <label class="modal__comments-form" for="comments">
+                      <span class="modal__title-form">Comments</span>
+                    <textarea class="modal__feedback" placeholder="Enter the text"></textarea>
                     </label>
 
-                    <label class="checkbox-section" for="checkbox-accept">
-                      <div class="checkbox-icon-container">
-                    <input class="checkbox-form visually-hidden" type="checkbox" id="checkbox-accept">
+                    <label class="modal__checkbox-section" for="checkbox-accept">
+                      <div class="checkbox-container">
+                    <input class="checkbox-container__checkbox-form visually-hidden" type="checkbox" id="checkbox-accept">
 
-                      <svg class="checkbox-section-icon">
-                        <use class="checkbox-icon-accept" href="./images/icons/symbol-defs.svg#icon-check"></use>
-                        <use class="checkbox-icon-ignored" href="./images/icons/symbol-defs.svg#icon-Vector"></use>
+                      <svg class="checkbox-container__icons">
+                        <use class="checkbox-container__accept" href="./images/icons/symbol-defs.svg#icon-check"></use>
+                        <use class="checkbox-container__ignored" href="./images/icons/symbol-defs.svg#icon-Vector"></use>
                       </svg>
                       </div>  
 
-                      <div class="terms-conditions-link">
-                      <span class="checkbox-form-text">I agree with the newsletter and accept the</span>
-                        <a class="checkbox-modal-link" href="#">Terms and Conditions</a>
+                      <div class="policy-container">
+                      <span class="policy-container__text">I agree with the newsletter and accept the</span>
+                        <a class="policy-container__link" href="#">Terms and Conditions</a>
                       </div>
                     </label>
 
-                    <button class="button-submit-modal" type="submit">Send</button>
+                    <button class="modal__submit-button" type="submit">Send</button>
                   </form>
                   
-                  <button class="modal-close-button" type="button" data-modal-close>
-                    <svg class="modal-close-icon">
+                  <button class="modal__close-button" type="button" data-modal-close>
+                    <svg class="modal__close-icon">
                       <use href="./images/icons/symbol-defs.svg#icon-closing-modal"></use>
                     </svg>
                   </button>
