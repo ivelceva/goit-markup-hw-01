@@ -1,6 +1,14 @@
 /* section about */
+@media screen and (max-width: 1199px) {
+    .about-section {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
 .about-section {
-    padding-bottom: 94px;
+    padding-bottom: 94px;   
 }
 
 .about-section-title {
@@ -41,4 +49,5 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     white-space: nowrap;
+}
 }

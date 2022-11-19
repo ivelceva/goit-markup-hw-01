@@ -27,7 +27,13 @@
         <li class="linkbar__item"><a class="linkbar__list" href="./portfolio.html">Portfolio</a></li>
         <li class="linkbar__item"><a class="linkbar__list" href="#">Contacts</a></li>
       </ul>
-      </nav>
+    </nav>
+
+     <button type="button" class="mobile-menu-button js-open-menu">
+        <svg class="mobile-menu-icons" aria-label="mobile menu switch" width="40" height="40">
+          <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu-mobile"></use>
+        </svg>
+      </button>
     
        <ul class="linkbar-contacts">
         <li class="linkbar-contacts__item"><a class="linkbar-contacts__list" href="mailto:info@devstudio.com">
@@ -43,6 +49,53 @@
         </li>
        </ul>
     </div>
+
+    <div class="mobile-menu js-menu-container">
+      <div class="container mobile-menu__container">
+      <button type="button" class="mobile-menu__close js-close-menu">
+        <svg class="mobile-menu__icon" width="40" height="40">
+          <use class="icon-cross" href="./images/icons/symbol-defs.svg#icon-close-menu-mobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__link">
+          <a class="mobile-menu__item" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu__link">
+          <a class="mobile-menu__item" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu__link">
+          <a class="mobile-menu__item" href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__contact">
+        <li class="mobile-menu__phone">
+          <a class="mobile-menu__dial" href="tel:+12127724150">+1 212-772-4150</a>
+        </li>
+        <li class="mobile-menu__email">
+          <a class="mobile-menu__write" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>     
+      </ul>
+
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="#">Instagram
+          <span class="mobile-socials__separator">|</span>
+        </a>
+      </li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="#">Twitter
+          <span class="mobile-socials__separator">|</span>
+        </a>
+      </li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="#">Facebook
+          <span class="mobile-socials__separator">|</span>
+        </a>
+      </li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="#">LinkedIn</a></li>
+      </ul>
+      </div>
+    </div>
   </header>
 
   <!-- main -->
@@ -54,7 +107,7 @@
         <h1 class="hero-section__content-title">effective solutions for your business</h1>
 
             <button class="hero-section__request-btn" type="button" data-modal-open>Request our service</button>
-              <div class="backdrop is-hidden" data-modal>
+              <div class="backdrop is-hidden" data-modal> 
 
   <!-- MODAL FORM -->
 
@@ -186,7 +239,15 @@
 
          <ul class="about-section-list">
           <li class="about-item">
-            <img src="./images/about_pic1.jpg" alt="зображення" width="370" height="294">
+            <picture class="picture">
+              <source
+                srcset="./images/desktop/desktop-about1.jpg 1x,
+                        ./images/desktop/desktop-about1@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />        
+
+              <img src="./images/desktop/desktop-about1.jpg" alt="typing" width="370" height="294">
+            </picture>
               <div class="about-item-name">
                 <p class="overlay-about">
                   desktop apps
@@ -194,7 +255,14 @@
             </div>
           </li>
           <li class="about-item">
-            <img src="./images/about_pic2.jpg" alt="зображення" width="370" height="294">
+            <picture class="picture">
+              <source
+                srcset="./images/desktop/desktop-about2.jpg 1x,
+                        ./images/desktop/desktop-about2@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />     
+             <img src="./images/desktop/desktop-about2.jpg" alt="phone" width="370" height="294">
+            </picture>
               <div class="about-item-name">
                   <p class="overlay-about">
                     mobile apps
@@ -202,7 +270,14 @@
               </div>
           </li>
           <li class="about-item">
-            <img src="./images/about_pic3.jpg" alt="зображення" width="370" height="294">
+            <picture class="picture">
+              <source
+                srcset="./images/desktop/desktop-about3.jpg 1x,
+                        ./images/desktop/desktop-about3@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />     
+             <img src="./images/desktop/desktop-about3.jpg" alt="tablet" width="370" height="294">
+            </picture>
               <div class="about-item-name">
                   <p class="overlay-about">
                     design solutions
@@ -220,7 +295,28 @@
 
         <ul class="our-team-list">
         <li class="our-team-content">
-          <img src="./images/team_igor.jpg"  class="pic" alt="Christopher Walker" width="270" height="260">
+          <picture class="picture">
+              <source
+                srcset="./images/desktop/desktop-team1.jpg 1x,
+                        ./images/desktop/desktop-team1@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                
+              <source
+                srcset="./images/tablet/tablet-team1.jpg 1x,
+                        ./images/tablet/tablet-team1@2x.jpg 2x"
+                media="(min-width: 768px)"
+                />     
+
+              <source
+                srcset="./images/mobile/mobile-team1.jpg 1x,
+                        ./images/mobile/mobile-team1@2x.jpg 2x"
+                media="(max-width: 767px)"
+                />     
+
+          <img src="./images/mobile/mobile-team1.jpg"  class="pic" alt="Christopher Walker">
+          </picture>
+          
           <h3 class="our-team-member">Christopher Walker</h3>
           <p class="our-team-member-position">Product Manager</p>
 
@@ -257,8 +353,29 @@
         </li>
         
         <li class="our-team-content">
-          <img src="./images/team_olga.jpg"  class="pic" alt="Kylie Evans" width="270" height="260">
-          <h3 class="our-team-member">Kylie Evans</h3>
+          <picture class="picture">
+            <source
+                srcset="./images/desktop/desktop-team2.jpg 1x,
+                        ./images/desktop/desktop-team2@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                
+              <source
+                srcset="./images/tablet/tablet-team2.jpg 1x,
+                        ./images/tablet/tablet-team2@2x.jpg 2x"
+                media="(min-width: 768px)"
+                />     
+
+            <source
+                srcset="./images/mobile/mobile-team2.jpg 1x,
+                        ./images/mobile/mobile-team2@2x.jpg 2x"
+                media="(max-width: 767px)"
+                />     
+
+          <img src="./images/mobile/mobile-team2.jpg"  class="pic" alt="Kylie Evans">
+        </picture>
+          
+        <h3 class="our-team-member">Kylie Evans</h3>
           <p class="our-team-member-position">Frontend Developer</p>
 
           <ul class="our-team-social">
@@ -293,7 +410,28 @@
           </ul>
           </li>
           <li class="our-team-content">
-          <img src="./images/team_nick.jpg"  class="pic" alt="Ryan Harris" width="270" height="260">
+
+          <picture class="picture">
+            <source
+                srcset="./images/desktop/desktop-team3.jpg 1x,
+                        ./images/desktop/desktop-team3@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                
+              <source
+                srcset="./images/tablet/tablet-team3.jpg 1x,
+                        ./images/tablet/tablet-team3@2x.jpg 2x"
+                media="(min-width: 768px)"
+                />     
+
+            <source
+                srcset="./images/mobile/mobile-team3.jpg 1x,
+                        ./images/mobile/mobile-team3@2x.jpg 2x"
+                media="(max-width: 767px)"
+                />     
+          <img src="./images/mobile/mobile-team3.jpg"  class="pic" alt="Ryan Harris">
+          </picture>
+
           <h3 class="our-team-member">Ryan Harris</h3>
           <p class="our-team-member-position">Marketing</p>
 
@@ -329,7 +467,27 @@
           </ul>
           </li>
           <li class="our-team-content">
-          <img src="./images/team_michael.jpg"  class="pic" alt="Tyler Moore" width="270" height="260">
+        <picture class="picture">
+            <source
+                srcset="./images/desktop/desktop-team4.jpg 1x,
+                        ./images/desktop/desktop-team4@2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                
+              <source
+                srcset="./images/tablet/tablet-team4.jpg 1x,
+                        ./images/tablet/tablet-team4@2x.jpg 2x"
+                media="(min-width: 768px)"
+                />     
+
+            <source
+                srcset="./images/mobile/mobile-team4.jpg 1x,
+                        ./images/mobile/mobile-team4@2x.jpg 2x"
+                media="(max-width: 767px)"
+                />     
+          <img src="./images/mobile/mobile-team4.jpg"  class="pic" alt="Tyler Moore">
+        </picture>
+
           <h3 class="our-team-member">Tyler Moore</h3>
           <p class="our-team-member-position">UI Designer</p>
 
@@ -490,5 +648,6 @@
     </footer>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -27,7 +27,13 @@
         <li class="linkbar__item"><a class="linkbar__list current" href="./portfolio.html">Portfolio</a></li>
         <li class="linkbar__item"><a class="linkbar__list" href="#">Contacts</a></li>
       </ul>
-      </nav>
+    </nav>
+
+     <button type="button" class="mobile-menu-button js-open-menu">
+        <svg class="mobile-menu-icons" aria-label="mobile menu switch" width="40" height="40">
+          <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu-mobile"></use>
+        </svg>
+      </button>
     
        <ul class="linkbar-contacts">
         <li class="linkbar-contacts__item"><a class="linkbar-contacts__list" href="mailto:info@devstudio.com">
@@ -42,6 +48,53 @@
             </svg>+1 212-772-4150</a>
         </li>
        </ul>
+    </div>
+
+    <div class="mobile-menu js-menu-container">
+      <div class="container mobile-menu__container">
+      <button type="button" class="mobile-menu__close js-close-menu">
+        <svg class="mobile-menu__icon" width="40" height="40">
+          <use class="icon-cross" href="./images/icons/symbol-defs.svg#icon-close-menu-mobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__link">
+          <a class="mobile-menu__item" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu__link">
+          <a class="mobile-menu__item" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu__link">
+          <a class="mobile-menu__item" href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__contact">
+        <li class="mobile-menu__phone">
+          <a class="mobile-menu__dial" href="tel:+12127724150">+1 212-772-4150</a>
+        </li>
+        <li class="mobile-menu__email">
+          <a class="mobile-menu__write" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>     
+      </ul>
+
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="#">Instagram
+          <span class="mobile-socials__separator">|</span>
+        </a>
+      </li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="#">Twitter
+          <span class="mobile-socials__separator">|</span>
+        </a>
+      </li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="#">Facebook
+          <span class="mobile-socials__separator">|</span>
+        </a>
+      </li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="#">LinkedIn</a></li>
+      </ul>
+      </div>
     </div>
   </header>
 
@@ -287,5 +340,6 @@
      </div>
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
