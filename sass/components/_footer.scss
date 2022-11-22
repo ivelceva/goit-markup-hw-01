@@ -6,6 +6,10 @@ footer {
     padding-bottom: 60px;
 }
 
+// .footer-logo-address-container {
+//     margin-bottom: 60px;
+// }
+
 .footer-logo-title-color {
     color: var(--blue);
 }
@@ -41,7 +45,7 @@ footer {
 
 .footer-contact {
     text-align: center;
-    margin-bottom: 48px;  //MEDIA
+    // margin-bottom: 48px;
 }
 
 .footer-contact-list {
@@ -65,10 +69,14 @@ footer {
     text-align: center;
 }
 
+.footer-social-container {
+    margin-bottom: 60px;
+}
+
 .footer-social {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 }
 
 .footer-social-item {
@@ -182,20 +190,15 @@ footer {
 /* TABLET STYLING */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-footer {
-    position: relative;
-}
 
-.footer-logo-address-container {
-    display: inline-block;
-}
+// .footer-logo-address-container {
+//     display: inline-block;
+// }
 
-.footer-social-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top: 65px;
-    padding-right: 89px;
+.footer-address-social-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 .subscribe-form {
@@ -215,6 +218,11 @@ footer{
     background-color: var(--blackrock);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-address-social-container {
+    display: flex;
+    align-items: baseline;
 }
 
 .footer-logo-address {
@@ -243,6 +251,10 @@ footer{
     margin-right: 93px;
 }
 
+.footer-find-us {
+    text-align: inherit;
+}
+
 .subscribe-form {
     display: flex;
 }
@@ -253,6 +265,7 @@ footer{
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
+    text-align: inherit;
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 20px;

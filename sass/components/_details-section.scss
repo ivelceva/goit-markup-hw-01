@@ -1,12 +1,16 @@
 /* section details */
 
 .details-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .details-section-list {
     display: block;
+}
+
+.details-section-list .details-section-item:last-child {
+    margin-bottom: 0;
 }
 
 .details-section-title {
@@ -29,6 +33,10 @@
     border-radius: 4px;
     margin-bottom: 30px;
     background-color: var(--honeydew);
+}
+
+.details-section-item {
+    margin-bottom: 30px;
 }
 
 .details-icon {
@@ -59,7 +67,11 @@
 /* TABLET STYLING */
 
 @media screen and (min-width: 768px) {
-    .details-section-list {
+.details-section-title {
+    text-align: inherit;
+}    
+    
+.details-section-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -73,7 +85,12 @@
 /* DESKTOP STYLING */
 
 @media screen and (min-width: 1200px) {
-    .details-section-list {
+.details-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}    
+    
+.details-section-list {
         display: flex;
         gap: 30px;
 }

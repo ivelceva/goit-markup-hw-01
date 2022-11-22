@@ -1,8 +1,8 @@
 /* section our team  */
 .our-team-section {
     background-color: var(--ghostwhite);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .our-team-list {
@@ -17,12 +17,12 @@
 
 .our-team-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--darkgrey);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .our-team-content {
@@ -115,9 +115,24 @@
 /* DESKTOP STYLING */
 
 @media screen and (min-width: 1200px) {
+    .our-team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
     .our-team-list {
     display: flex; 
     gap: 30px;
+}
+
+.our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    // line-height: 1.2;
+    // text-align: center;
+    // letter-spacing: 0.03em;
+    // color: var(--darkgrey);
+    margin-bottom: 50px;
 }
 }
 
