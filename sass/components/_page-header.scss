@@ -94,8 +94,12 @@
         margin-right: 50px;
     }
 
-    .linkbar .linkbar__item:last-child {
-        margin-right: 0;
+    .linkbar-contacts__item {
+        margin-bottom: 10px;
+    }
+
+    .linkbar-contacts .linkbar-contacts__item:last-child {
+        margin-bottom: 0;
     }
 
     .linkbar__list {
@@ -161,9 +165,7 @@
     fill: var(--sonicsilver);
     }
 
-    .linkbar-contacts__item {
-        margin-bottom: 10px;
-    }
+ 
 
 .linkbar__list.current {
     position: relative;
@@ -210,6 +212,10 @@
 // .navbar-title__color {
 //     color: var(--blue);
 // }
+
+.linkbar-contacts .linkbar-contacts__item {
+        margin-bottom: 0;
+    }
 
 .linkbar {
     display: flex;

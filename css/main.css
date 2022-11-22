@@ -46,7 +46,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -151,8 +151,11 @@ img {
   .linkbar .linkbar__item {
     margin-right: 50px;
   }
-  .linkbar .linkbar__item:last-child {
-    margin-right: 0;
+  .linkbar-contacts__item {
+    margin-bottom: 10px;
+  }
+  .linkbar-contacts .linkbar-contacts__item:last-child {
+    margin-bottom: 0;
   }
   .linkbar__list {
     position: relative;
@@ -206,9 +209,6 @@ img {
     margin-right: 10px;
     fill: var(--sonicsilver);
   }
-  .linkbar-contacts__item {
-    margin-bottom: 10px;
-  }
   .linkbar__list.current {
     position: relative;
     color: var(--darkgrey);
@@ -229,6 +229,9 @@ img {
 }
 /* DESKTOP STYLING */
 @media screen and (min-width: 1200px) {
+  .linkbar-contacts .linkbar-contacts__item {
+    margin-bottom: 0;
+  }
   .linkbar {
     display: flex;
     align-items: center;
@@ -326,6 +329,8 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 22px;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu__close {
@@ -375,6 +380,10 @@ img {
   text-decoration: none;
 }
 
+.mobile-social-container {
+  margin-top: auto;
+}
+
 .mobile-menu__phone {
   margin-bottom: 32px;
 }
@@ -422,8 +431,8 @@ img {
 
 /* hero section */
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/mobile/mobile-cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -474,13 +483,7 @@ img {
 /* TABLET STYLING */
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/tablet/tablet-cover.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -494,10 +497,6 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/desktop/cover-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
   }
   /* hero section button */
 }
@@ -773,12 +772,16 @@ img {
 }
 /* section details */
 .details-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .details-section-list {
   display: block;
+}
+
+.details-section-list .details-section-item:last-child {
+  margin-bottom: 0;
 }
 
 .details-section-title {
@@ -800,6 +803,10 @@ img {
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: var(--honeydew);
+}
+
+.details-section-item {
+  margin-bottom: 30px;
 }
 
 .details-icon {
@@ -827,6 +834,9 @@ img {
 
 /* TABLET STYLING */
 @media screen and (min-width: 768px) {
+  .details-section-title {
+    text-align: inherit;
+  }
   .details-section-list {
     display: flex;
     flex-wrap: wrap;
@@ -838,6 +848,10 @@ img {
 }
 /* DESKTOP STYLING */
 @media screen and (min-width: 1200px) {
+  .details-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .details-section-list {
     display: flex;
     gap: 30px;
@@ -898,8 +912,8 @@ img {
 /* section our team  */
 .our-team-section {
   background-color: var(--ghostwhite);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .our-team-list {
@@ -913,12 +927,12 @@ img {
 
 .our-team-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--darkgrey);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .our-team-content {
@@ -1001,25 +1015,34 @@ img {
 }
 /* DESKTOP STYLING */
 @media screen and (min-width: 1200px) {
+  .our-team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .our-team-list {
     display: flex;
     gap: 30px;
   }
+  .our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 /* section customers */
 .customers-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .customers-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--darkgrey);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .customers-list {
@@ -1075,6 +1098,14 @@ img {
 }
 /* DESKTOP STYLING */
 @media screen and (min-width: 1200px) {
+  .customers-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .customers-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
   .customers-list {
     display: flex;
     justify-content: center;
@@ -1251,7 +1282,6 @@ footer {
 
 .footer-contact {
   text-align: center;
-  margin-bottom: 48px;
 }
 
 .footer-contact-list {
@@ -1276,10 +1306,13 @@ footer {
   text-align: center;
 }
 
+.footer-social-container {
+  margin-bottom: 60px;
+}
+
 .footer-social {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer-social-item {
@@ -1393,18 +1426,10 @@ footer {
 
 /* TABLET STYLING */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  footer {
-    position: relative;
-  }
-  .footer-logo-address-container {
-    display: inline-block;
-  }
-  .footer-social-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top: 65px;
-    padding-right: 89px;
+  .footer-address-social-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
   }
   .subscribe-form {
     display: grid;
@@ -1420,6 +1445,10 @@ footer {
     background-color: var(--blackrock);
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .footer-address-social-container {
+    display: flex;
+    align-items: baseline;
   }
   .footer-logo-address {
     display: flex;
@@ -1441,6 +1470,9 @@ footer {
     justify-content: center;
     margin-right: 93px;
   }
+  .footer-find-us {
+    text-align: inherit;
+  }
   .subscribe-form {
     display: flex;
   }
@@ -1450,6 +1482,7 @@ footer {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.03em;
+    text-align: inherit;
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 20px;
