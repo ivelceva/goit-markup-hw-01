@@ -328,9 +328,12 @@ img {
   position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
-  padding-left: 22px;
+  padding-left: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .mobile-menu__close {
@@ -351,10 +354,6 @@ img {
 }
 .mobile-menu__icon:hover, .mobile-menu__icon:focus {
   fill: var(--blue);
-}
-
-.mobile-menu__list {
-  margin-bottom: 302px;
 }
 
 .mobile-menu__list .mobile-menu__link:last-child {
@@ -1430,6 +1429,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    margin-bottom: 50px;
   }
   .subscribe-form {
     display: grid;
