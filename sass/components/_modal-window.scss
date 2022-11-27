@@ -1,14 +1,14 @@
 /* Modal Window */
 .modal {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    width: 450px;
-    height: 609px;
+    // width: 450px;
+    // height: 609px;
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     padding: 40px;
 }
 
@@ -26,6 +26,7 @@
     height: 100%;
     z-index: 100;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: scroll;
 }
 
 .modal__close-button {
@@ -217,13 +218,25 @@
     }
 }
 
+
+/* MOBILE - TABLET STYLING */
+@media screen and (min-width: 480px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+}
+
+
 /* DESKTOP STYLING */
 
 @media screen and (min-width: 1200px) {
     .modal {
+    top: 50%;
     width: 528px;
     height: 581px;
-}
+    transform: translate(-50%, -50%);
+    }
 }
 
 
