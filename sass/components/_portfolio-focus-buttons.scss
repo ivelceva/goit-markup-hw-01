@@ -1,7 +1,7 @@
 /* PORTFOLIO FILE */
 /* focus section button */
 .focus-list {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
@@ -37,9 +37,17 @@
     .focus-list {
         flex-wrap: nowrap;
         justify-content: center;
+        margin-bottom: 30px;
     }
 }
 
+/* DESKTOP STYLING */
+
+@media screen and (min-width: 1200px) {
+    .focus-list {
+        margin-bottom: 50px;
+    }
+}
 
 
 // .focus-list {

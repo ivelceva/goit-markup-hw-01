@@ -38,6 +38,7 @@
     border: none;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
 
 &:hover .mobile-menu__icon,
 &:focus .mobile-menu__icon {
@@ -53,10 +54,6 @@
     fill: var(--blue);
     }
 }
-
-// .mobile-menu__list {
-//     margin-bottom: 302px;
-// }
 
 .mobile-menu__list .mobile-menu__link:last-child {
     margin-bottom: 0;
@@ -91,7 +88,7 @@
 
 .mobile-menu__dial {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
@@ -118,12 +115,22 @@
 
 .mobile-socials__link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--blue);
     text-decoration: none;
 }
+
+ @media screen and (min-width: 480px) {
+        .mobile-socials__link {
+            font-size: 18px;
+        }
+
+        .mobile-menu__dial {
+            font-size: 34px;
+        }
+    }
 
 .mobile-socials__separator {
     color: rgba(33, 33, 33, 0.2);

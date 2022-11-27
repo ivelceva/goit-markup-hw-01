@@ -2,8 +2,8 @@
 /* gallery section portfolio file */
 
 .gallery-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .gallery-section-photo {
@@ -11,17 +11,13 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    align-items: center;
-    width: 100;
+    width: 100%;
 }
 
-.gallery-section-item {
-    flex-basis: calc((100% - 60px) / 3);
-
-&:hover {
+.gallery-section-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-}
+
 
 .gallery-section-title {
     font-weight: 700;
@@ -83,17 +79,34 @@
 /* TABLET STYLING */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .tablet-margin {
-        margin-bottom: 37px;
-    }
 
     .gallery-section-photo {
     justify-content: inherit;
     }
+
+    .gallery-section-item {
+    flex-basis: calc((100% - 30px) / 2);
+    display: flex;
+    flex-direction: column;
 }
 
+.gallery-bottom-frame {
+    flex-grow: 1;
+}
+}
 
+/* DESKTOP STYLING */
 
+@media screen and (min-width: 1200px) {
+    .gallery-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+    
+    .gallery-section-item {
+    flex-basis: calc((100% - 60px) / 3);
+    }
+}
 
 
 
